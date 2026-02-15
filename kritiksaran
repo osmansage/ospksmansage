@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+
+    <style>
+        /* Responsif sederhana */
+        iframe {
+            width: 100%;
+            height: 1800px; /* Bisa disesuaikan */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSfQfOwHtPXQcfyuGBOZCLGYSVOZoGKLF00cu-8Fyxbisz5uNA/viewform?embedded=true">
+</iframe>
+
+</body>
+</html>
