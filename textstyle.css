@@ -1,0 +1,10 @@
+<style>
+.glow {
+  color: #1e90ff;
+  text-shadow: 
+    0 0 5px #1e90ff,
+    0 0 10px #1e90ff,
+    0 0 20px #1e90ff,
+    0 0 40px #1e90ff;
+}
+</style>
