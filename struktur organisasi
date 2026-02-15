@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Struktur Organisasi - OSIS SMAN 1 Gedeg</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color:#fff;
+    margin:0;
+    padding:20px;
+    text-align:center;
+}
+
+h1{
+    font-size:2.5em;
+    margin-bottom:20px;
+    text-shadow:2px 2px 4px rgba(0,0,0,.5);
+}
+
+.org-chart{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:20px;
+}
+
+.level{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+/* CARD */
+.person{
+    background:rgba(255,255,255,.9);
+    border-radius:10px;
+    padding:15px;
+    margin:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,.3);
+    text-align:center;
+    width:150px;
+    transition:.3s;
+}
+.person:hover{transform:scale(1.05)}
+
+.person img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    margin-bottom:10px;
+    border:3px solid #667eea;
+    object-fit:cover;
+}
+
+.person h3{
+    margin:5px 0;
+    color:#333;
+    font-size:1.1em;
+}
+.person p{
+    margin:0;
+    color:#666;
+    font-size:.9em;
+}
+
+/* GARIS */
+.line{
+    width:2px;
+    height:30px;
+    background:#fff;
+    margin:10px 0;
+}
+
+/* SUB ANGGOTA */
+.sub-level{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+
+.sub-person{
+    background:rgba(255,255,255,.8);
+    border-radius:8px;
+    padding:8px;
+    margin:5px;
+    width:120px;
+    font-size:.8em;
+    color:#333;
+    box-shadow:0 2px 4px rgba(0,0,0,.2);
+}
+
+.sub-person img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-bottom:5px;
+    border:2px solid #764ba2;
+    object-fit:cover;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Struktur Organisasi OSIS SMAN 1 Gedeg</h1>
+
+<div class="org-chart">
+
+<!-- KETUA -->
+<div class="level">
+    <div class="person">
+        <img
+          src="https://raw.githubusercontent.com/brehnatasurya-cmd/wleowleo/main/brehnata_for_struktur.jpg"
+          alt="Ketua OSIS"
+          onerror="this.onerror=null;this.src='https://via.placeholder.com/80';">
+        <h3>Brehnata Suryo Kencono Sajiwo</h3>
+        <p>Ketua Umum</p>
+    </div>
+</div>
+
+<div class="line"></div>
+
+<!-- PENGURUS INTI -->
+<div class="level">
+    <div class="person"><img src="https://via.placeholder.com/80"><h3>Dinda Aurelia Putri S.</h3><p>Wakil Umum</p></div>
+    <div class="person"><img src="https://via.placeholder.com/80"><h3>A. Gustaf</h3><p>Wakil 1</p></div>
+    <div class="person"><img src="https://via.placeholder.com/80"><h3>Dinian Eka Sellycia</h3><p>Sekretaris Umum</p></div>
+    <div class="person"><img src="https://via.placeholder.com/80"><h3>Cinta Kalea</h3><p>Sekretaris 1</p></div>
+    <div class="person"><img src="https://via.placeholder.com/80"><h3>Natasya Artika M. J.</h3><p>Bendahara Umum</p></div>
+    <div class="person"><img src="https://via.placeholder.com/80"><h3>Novreza</h3><p>Bendahara 1</p></div>
+</div>
+
+<div class="line"></div>
+
+<!-- SEKSI BIDANG -->
+<div class="level">
+
+<!-- SEKBD 1 -->
+<div class="person">
+    <img src="https://via.placeholder.com/80">
+    <h3>M. Zaky Ramadhan</h3>
+    <p>Koordinator Sekbid 1</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>M. Bobby Altafaris</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Renata Anggun</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Rostinitri Setya</p></div>
+    </div>
+</div>
+
+<!-- SEKBD 2 -->
+<div class="person">
+    <img src="https://via.placeholder.com/80">
+    <h3>Zanubah</h3>
+    <p>Koordinator Sekbid 2</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Fajar</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Nama Anggota</p></div>
+    </div>
+</div>
+
+<!-- SEKBD 3 -->
+<div class="person">
+    <img src="https://via.placeholder.com/80">
+    <h3>Sintawati</h3>
+    <p>Koordinator Sekbid 3</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 1</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 2</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 3</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 4</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 5</p></div>
+    </div>
+</div>
+
+<!-- SEKBD 4 -->
+<div class="person">
+    <img src="https://via.placeholder.com/80">
+    <h3>Vita</h3>
+    <p>Koordinator Sekbid 4</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 1</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 2</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 3</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 4</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 5</p></div>
+    </div>
+</div>
+
+<!-- SEKBD 5–10 (POLA SAMA, AMAN) -->
+    <div class="person">
+    <img src="https://via.placeholder.com/80">
+    <h3>Vita</h3>
+    <p>Koordinator Sekbid 5</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 1</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 2</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 3</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 4</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 5</p></div>
+    </div>
+</div>
+
+    <div class="person">
+    <img src="https://via.placeholder.com/80">
+    <h3>Vita</h3>
+    <p>Koordinator Sekbid 6</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 1</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 2</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 3</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 4</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 5</p></div>
+    </div>
+</div>
+
+    <div class="person">
+    <img src="https://via.placeholder.com/80">
+    <h3>Vita</h3>
+    <p>Koordinator Sekbid 7</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 1</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 2</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 3</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 4</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 5</p></div>
+    </div>
+</div>
+
+    <div class="person">
+    <img src="https://via.placeholder.com/80">
+    <h3>Vita</h3>
+    <p>Koordinator Sekbid 8</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 1</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 2</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 3</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 4</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 5</p></div>
+    </div>
+</div>
+
+    <div class="person">
+    <img src="https://via.placeholder.com/80">
+    <h3>Vita</h3>
+    <p>Koordinator Sekbid 9</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 1</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 2</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 3</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 4</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 5</p></div>
+    </div>
+</div>
+
+    <div class="person">
+    <img src="https://via.placeholder.com/80">
+    <h3>Vita</h3>
+    <p>Koordinator Sekbid 10</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 1</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 2</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 3</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 4</p></div>
+        <div class="sub-person"><img src="https://via.placeholder.com/50"><p>Anggota 5</p></div>
+    </div>
+</div>
+<!-- (sudah kamu isi, tidak aku ubah strukturnya) -->
+
+</div>
+</div>
+
+</body>
+</html>
