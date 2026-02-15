@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visi dan Misi Organisasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #00008B 0%, #0000FF 50%, #4169E1 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 900px;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: slideIn 1.2s ease-out;
+            position: relative;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            border-radius: 25px;
+            z-index: -1;
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+            font-weight: 700;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(128, 128, 128, 0.3); /* Abu-abu transparan */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        .section h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+        .section h2 i {
+            margin-right: 10px;
+            color: #FFD700;
+        }
+        .section p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(50px) scale(0.9); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Visi dan Misi OSIS</h1>
+        
+        <div class="section">
+            <h2><i class="fas fa-eye"></i>Visi</h2>
+            <p>Aktif, Kreatif, Aspiratif dan Inspiratif</p>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-bullseye"></i>Misi</h2>
+            <p> 1. Menumbuhkan kebersamaan dan kekompakan siswa melalui kegiatan positif yang membangun solidaritas, sehingga tercipta lingkungan sekolah yang harmonis dan penuh rasa persaudaraan.
+            <p> 2. Mengembangkan bakat dan minat siswa lewat program ekstrakurikuler, kompetisi, dan ruang ekspresi kreatif, agar setiap potensi dapat berkembang dan mampu melahirkan prestasi di tingkat sekolah maupun luar sekolah.
+            <p> 3. Membangun komunikasi yang terbuka antara OSIS, siswa, dan pihak sekolah sehingga aspirasi siswa dapat tersampaikan dengan baik, ditindaklanjuti secara nyata, dan berkontribusi bagi kemajuan sekolah.
+            <p> 4. Menjadikan OSIS sebagai teladan bagi seluruh siswa dengan menampilkan sikap disiplin, tanggung jawab, dan kreativitas, sehingga OSIS benar-benar menjadi inspirasi dan contoh dalam kehidupan sekolah sehari-hari.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
