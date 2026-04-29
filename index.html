@@ -159,6 +159,7 @@
                 height: 40px;
             }
         }
+        
     </style>
 </head>
 <body>
@@ -179,7 +180,7 @@
                 <li><a href="kritiksaran.html">Kritik & Saran</a></li>
                 <li><a href="strukturorganisasi.html">Struktur OSIS</a></li>
                 <li><a href="strukturmpk.html">Struktur MPK</a></li>
-                <li><a href="strukturmpk.html">Informasi</a></li>
+                <li><a href="#informasi" onclick="scrollInformasi(event)">Informasi</a></li>
             </ul>
         </nav>
 
@@ -261,7 +262,7 @@
 
     <!-- ------------ CONTENT ------------ -->
     <main class="content">
-        <section class="news-section">
+        <section class="news-section" id="informasi">
             <h2>Berita Terbaru</h2>
             <div class="news-item">
                 <h3>OSIS SMAN 1 Gedeg berhasil membuat Majalah MARS Edisi 65 2026</h3>
@@ -269,7 +270,7 @@
             </div>
             <div class="news-item">
                 <h3>Prestasi Siswa-Siswi SMAN 1 Gedeg</h3>
-                <p>Setiap bulan menghadirkan kisah baru tentang perjuangan dan keberhasilan. Di Februari ini, siswa-siswi kami kembali menorehkan prestasi yang patut diapresiasi dan dibanggakan.<a href="#">Lihat</a></p>
+                <p>Setiap bulan menghadirkan kisah baru tentang perjuangan dan keberhasilan. Di bulan ini, siswa-siswi SMAN 1 Gedeg kembali menorehkan prestasi yang patut diapresiasi dan dibanggakan.<a href="#">Lihat</a></p>
             </div>
         </section>
 
@@ -294,17 +295,20 @@
         <p>Alamat: JL. PENDIDIKAN 55, Gedek, Mojokerto, Jawa Timur <br> Email: osissmansage0@gmail.com</p>
         <p>Ikuti kami: <a href="https://www.tiktok.com/@ofc.osismpksmage1?is_from_webapp=1&sender_device=pc">Tiktok</a> | <a href="https://www.instagram.com/osismpksmage?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></p>
     </footer>
-
+    <script>
+      function scrollInformasi(e) {
+          e.preventDefault(); // ⛔ ini penting! biar tidak loncat
+      
+          const target = document.getElementById("informasi");
+          const offset = 80; // tinggi header (sesuaikan)
+      
+          const posisi = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      
+          window.scrollTo({
+              top: posisi,
+              behavior: "smooth"
+          });
+      }
+      </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
