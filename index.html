@@ -299,10 +299,10 @@
     </footer>
     <script>
       function scrollInformasi(e) {
-          e.preventDefault(); // ⛔ ini penting! biar tidak loncat
+          e.preventDefault();
       
           const target = document.getElementById("informasi");
-          const offset = 80; // tinggi header (sesuaikan)
+          const offset = 80;
       
           const posisi = target.getBoundingClientRect().top + window.pageYOffset - offset;
       
