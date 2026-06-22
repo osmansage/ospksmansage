@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'OFTICLASSICO S6 | OSIS MPK SMAN 1 Gedeg</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #1f2937;
+            background: #f6f8fb;
+        }
+
+        header {
+            background: #004080;
+            color: white;
+            padding: 14px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.16);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 240px;
+            font-weight: 700;
+        }
+
+        .brand img {
+            width: auto;
+            height: 44px;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        nav a:hover,
+        nav a.active {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+
+        .page-top {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .top-inner {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 28px 24px 18px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: #004080;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .article-wrap {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 38px 24px 64px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 320px;
+            gap: 38px;
+            align-items: start;
+        }
+
+        article,
+        .side-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+        }
+
+        article {
+            overflow: hidden;
+        }
+
+        .article-head {
+            padding: 34px 34px 24px;
+        }
+
+        .category {
+            display: inline-block;
+            margin-bottom: 16px;
+            padding: 7px 12px;
+            border-radius: 6px;
+            background: #e7f1ff;
+            color: #004080;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            color: #0f172a;
+            font-size: 42px;
+            line-height: 1.18;
+            letter-spacing: 0;
+        }
+
+        .excerpt {
+            margin: 18px 0 0;
+            color: #475569;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 22px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .meta strong {
+            color: #004080;
+        }
+
+        .featured-image {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            display: block;
+            background: #dbeafe;
+        }
+
+        .caption {
+            margin: 0;
+            padding: 10px 34px 0;
+            color: #64748b;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .article-body {
+            padding: 26px 34px 38px;
+        }
+
+        .article-body p {
+            margin: 0 0 18px;
+            color: #334155;
+            font-size: 17px;
+            line-height: 1.85;
+        }
+
+        .article-body h2 {
+            margin: 30px 0 14px;
+            color: #004080;
+            font-size: 26px;
+            line-height: 1.3;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin: 26px 0;
+        }
+
+        .info-box {
+            padding: 18px;
+            border-radius: 8px;
+            background: #f1f7ff;
+            border: 1px solid #dbeafe;
+        }
+
+        .info-box span {
+            display: block;
+            margin-bottom: 8px;
+            color: #64748b;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .info-box strong {
+            color: #004080;
+            font-size: 18px;
+            line-height: 1.35;
+        }
+
+        blockquote {
+            margin: 28px 0;
+            padding: 20px 24px;
+            border-left: 5px solid #007bff;
+            background: #f1f7ff;
+            color: #1e3a8a;
+            font-size: 18px;
+            line-height: 1.7;
+            font-weight: 700;
+        }
+
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .button.primary {
+            background: #004080;
+            color: white;
+        }
+
+        .button.secondary {
+            border: 1px solid #cbd5e1;
+            color: #004080;
+            background: white;
+        }
+
+        aside {
+            position: sticky;
+            top: 96px;
+            display: grid;
+            gap: 18px;
+        }
+
+        .side-card {
+            padding: 22px;
+        }
+
+        .side-card h2 {
+            margin: 0 0 16px;
+            color: #004080;
+            font-size: 22px;
+        }
+
+        .schedule-list,
+        .related-list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .schedule-item,
+        .related-item {
+            padding-bottom: 14px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .schedule-item:last-child,
+        .related-item:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        .schedule-item strong,
+        .related-item a {
+            display: block;
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        .schedule-item span,
+        .related-item span {
+            display: block;
+            margin-top: 6px;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        .related-item a:hover {
+            color: #004080;
+        }
+
+        footer {
+            background: #004080;
+            color: white;
+            text-align: center;
+            padding: 24px;
+        }
+
+        footer p {
+            margin: 6px 0;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 920px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .article-wrap {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                position: static;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            .featured-image {
+                height: 330px;
+            }
+        }
+
+        @media (max-width: 560px) {
+            header {
+                padding: 14px 18px;
+            }
+
+            .brand {
+                flex-wrap: wrap;
+            }
+
+            .top-inner,
+            .article-wrap {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            .article-head,
+            .article-body,
+            .caption {
+                padding-left: 22px;
+                padding-right: 22px;
+            }
+
+            h1 {
+                font-size: 29px;
+            }
+
+            .excerpt,
+            .article-body p {
+                font-size: 16px;
+            }
+
+            .featured-image {
+                height: 240px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="logotanpabg (3).png" alt="Logo OSIS">
+            <span>OSIS MPK SMAN 1 GEDEG</span>
+            <img src="mpk.png" alt="Logo MPK">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="aboutosis.html">Tentang</a></li>
+                <li><a href="visimisi.html">Visi Misi</a></li>
+                <li><a href="strukturorganisasi.html">Struktur OSIS</a></li>
+                <li><a href="strukturmpk.html">Struktur MPK</a></li>
+                <li><a href="Informasi.html" class="active">Informasi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-top">
+        <div class="top-inner">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Beranda</a></li>
+                <li>/</li>
+                <li><a href="index.html#informasi">Event Terbaru</a></li>
+                <li>/</li>
+                <li>D'OFTICLASSICO S6</li>
+            </ul>
+        </div>
+    </section>
+
+    <main class="article-wrap">
+        <article>
+            <div class="article-head">
+                <span class="category">Event Sekolah</span>
+                <h1>D'OFTICLASSICO S6 Hadir sebagai Ajang Penyegaran Setelah Ujian</h1>
+                <p class="excerpt">OSIS MPK SMAN 1 Gedeg menghadirkan rangkaian lomba dan kegiatan kebersamaan untuk membangun semangat siswa setelah masa ujian.</p>
+                <div class="meta">
+                    <span>Diselenggarakan oleh <strong>OSIS MPK SMAN 1 Gedeg</strong></span>
+                    <span>15 Juni 2026</span>
+                    <span>Lingkungan SMAN 1 Gedeg</span>
+                </div>
+            </div>
+
+            <img src="eldeKAES.jpeg" alt="Dokumentasi lingkungan SMAN 1 Gedeg" class="featured-image">
+            <p class="caption">D'OFTICLASSICO S6 menjadi wadah kegiatan positif bagi siswa setelah menyelesaikan ujian.</p>
+
+            <div class="article-body">
+                <p>D'OFTICLASSICO S6 merupakan kegiatan sekolah yang dirancang sebagai ruang penyegaran bagi siswa setelah menyelesaikan ujian. Melalui event ini, siswa dapat kembali membangun kebersamaan, sportivitas, dan semangat berkompetisi dalam suasana yang menyenangkan.</p>
+
+                <p>Kegiatan ini menjadi salah satu program OSIS MPK SMAN 1 Gedeg untuk menghadirkan pengalaman sekolah yang aktif, kreatif, dan berkesan. Setiap rangkaian acara disusun agar siswa dapat berpartisipasi secara positif sekaligus mempererat hubungan antarkelas.</p>
+
+                <div class="info-grid">
+                    <div class="info-box">
+                        <span>Tanggal</span>
+                        <strong>15 Juni 2026</strong>
+                    </div>
+                    <div class="info-box">
+                        <span>Lokasi</span>
+                        <strong>Lingkungan SMAN 1 Gedeg</strong>
+                    </div>
+                    <div class="info-box">
+                        <span>Peserta</span>
+                        <strong>Siswa SMAN 1 Gedeg</strong>
+                    </div>
+                    <div class="info-box">
+                        <span>Penyelenggara</span>
+                        <strong>OSIS MPK SMAN 1 Gedeg</strong>
+                    </div>
+                </div>
+
+                <blockquote>
+                    Kegiatan ini menjadi momentum untuk melepas penat setelah ujian dan menghidupkan kembali semangat kebersamaan di lingkungan sekolah.
+                </blockquote>
+
+                <h2>Tujuan Kegiatan</h2>
+                <p>D'OFTICLASSICO S6 bertujuan menciptakan ruang ekspresi bagi siswa melalui kegiatan lomba, kerja sama tim, dan interaksi positif. Selain menjadi hiburan setelah ujian, event ini juga mendorong siswa untuk menjunjung sportivitas dan kekompakan.</p>
+
+                <h2>Rangkaian Acara</h2>
+                <p>Rangkaian kegiatan dapat berisi lomba antarkelas, penampilan siswa, dokumentasi kegiatan, serta sesi kebersamaan. Detail teknis lomba dan jadwal pelaksanaan dapat diumumkan melalui kanal resmi OSIS MPK SMAN 1 Gedeg.</p>
+
+                <h2>Informasi Pendaftaran</h2>
+                <p>Peserta dapat mengikuti arahan panitia atau menghubungi pengurus OSIS MPK untuk informasi teknis lebih lanjut. Pastikan setiap kelas memperhatikan jadwal, aturan lomba, dan ketentuan yang diberikan oleh panitia.</p>
+
+                <div class="button-row">
+                    <a href="kritiksaran.html" class="button primary">Hubungi Panitia</a>
+                    <a href="index.html" class="button secondary">Kembali ke Beranda</a>
+                </div>
+            </div>
+        </article>
+
+        <aside>
+            <section class="side-card">
+                <h2>Ringkasan Event</h2>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <strong>15 Juni 2026</strong>
+                        <span>Pelaksanaan kegiatan di SMAN 1 Gedeg</span>
+                    </div>
+                    <div class="schedule-item">
+                        <strong>Setelah masa ujian</strong>
+                        <span>Kegiatan penyegaran dan lomba siswa</span>
+                    </div>
+                    <div class="schedule-item">
+                        <strong>Peserta internal</strong>
+                        <span>Diikuti oleh siswa SMAN 1 Gedeg</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="side-card">
+                <h2>Informasi Lainnya</h2>
+                <div class="related-list">
+                    <div class="related-item">
+                        <a href="Informasi.html">Majalah MARS Edisi 65 Tahun 2026 telah tersedia</a>
+                        <span>Publikasi Sekolah</span>
+                    </div>
+                    <div class="related-item">
+                        <a href="strukturorganisasi.html">Struktur OSIS SMAN 1 Gedeg</a>
+                        <span>Organisasi</span>
+                    </div>
+                    <div class="related-item">
+                        <a href="kritiksaran.html">Sampaikan kritik dan saran untuk OSIS MPK</a>
+                        <span>Aspirasi</span>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 OSIS MPK SMAN 1 Gedeg. Semua hak dilindungi.</p>
+        <p>JL. Pendidikan 55, Gedeg, Mojokerto, Jawa Timur</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Struktur Organisasi - OSIS SMAN 1 Gedeg</title>
+
+ <style>
+    body {
+      margin: 0;
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 18px;
+      left: 18px;
+      z-index: 9999;
+
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: 14px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+
+      color: #202124;
+      cursor: pointer;
+
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .back-button:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.22);
+    }
+
+    .back-button:active {
+      transform: translateY(0) scale(0.96);
+    }
+
+    .back-button svg {
+      width: 22px;
+      height: 22px;
+      stroke-width: 2.4;
+    }
+
+    iframe {
+      width: 100%;
+      height: 1800px;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<button class="back-button" onclick="history.back()" aria-label="Kembali">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+    
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color:#fff;
+    margin:0;
+    padding:20px;
+    text-align:center;
+}
+
+h1{
+    font-size:2.5em;
+    margin-bottom:20px;
+    text-shadow:2px 2px 4px rgba(0,0,0,.5);
+}
+
+.org-chart{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:20px;
+}
+
+.level{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+/* CARD */
+.person{
+    background:rgba(255,255,255,.9);
+    border-radius:10px;
+    padding:15px;
+    margin:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,.3);
+    text-align:center;
+    width:150px;
+    transition:.3s;
+}
+.person:hover{transform:scale(1.05)}
+
+.person img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    margin-bottom:10px;
+    border:3px solid #667eea;
+    object-fit:cover;
+}
+
+.person h3{
+    margin:5px 0;
+    color:#333;
+    font-size:1.1em;
+}
+.person p{
+    margin:0;
+    color:#666;
+    font-size:.9em;
+}
+
+/* GARIS */
+.line{
+    width:2px;
+    height:30px;
+    background:#fff;
+    margin:10px 0;
+}
+
+/* SUB ANGGOTA */
+.sub-level{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+
+.sub-person{
+    background:rgba(255,255,255,.8);
+    border-radius:8px;
+    padding:8px;
+    margin:5px;
+    width:120px;
+    font-size:.8em;
+    color:#333;
+    box-shadow:0 2px 4px rgba(0,0,0,.2);
+}
+
+.sub-person img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-bottom:5px;
+    border:2px solid #764ba2;
+    object-fit:cover;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Struktur Organisasi OSIS SMAN 1 Gedeg</h1>
+
+<div class="org-chart">
+
+<!-- KETUA -->
+<div class="level">
+    <div class="person">
+        <img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/BREHNATA%20struktur.jpg"
+          alt="Ketua OSIS"
+          onerror="this.onerror=null;this.src='https://via.placeholder.com/80';">
+        <h3>Brehnata Suryo Kencono Sajiwo</h3>
+        <p>Ketua Umum</p>
+    </div>
+</div>
+
+<div class="line"></div>
+
+<!-- PENGURUS INTI -->
+<div class="level">
+    <div class="person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/aurel.jpeg"><h3>Dinda Aurelia Putri S.</h3><p>Wakil Umum</p></div>
+    <div class="person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Achmad%20Gustaf%20X-10.jpg"><h3>A. Gustaf</h3><p>Wakil 1</p></div>
+    <div class="person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/DINIAN%20EKA%20SELLYCIA%20.jpg"><h3>Dinian Eka Sellycia</h3><p>Sekretaris Umum</p></div>
+    <div class="person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/cinta%20kalea%20x7.jpg"><h3>Cinta Kalea</h3><p>Sekretaris 1</p></div>
+    <div class="person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/tasya.jpg"><h3>Natasya Artika M. J.</h3><p>Bendahara Umum</p></div>
+    <div class="person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Novreza%20Syahdaffa%20(X-7).jpg"><h3>Novreza Syahdaffa</h3><p>Bendahara 1</p></div>
+</div>
+
+<div class="line"></div>
+
+<!-- SEKSI BIDANG -->
+<div class="level">
+
+<!-- SEKBD 1 -->
+<div class="person">
+    <img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/zaky.jpg">
+    <h3>M. Zaky Ramadhan</h3>
+    <p>Koordinator Sekbid 1</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Muhammad%20Bobby%20.jpg"><p>M. Bobby Altafaris</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/renata%20x5.jpg"><p>Renata Anggun P.F.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/ros.jpg"><p>Rostinitri Setya B.</p></div>
+    </div>
+</div>
+
+<!-- SEKBD 2 -->
+<div class="person">
+    <img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/ZANUBAH%20ARIFATUT%20THOYIBAH.jpg">
+    <h3>Zanubah Arifatut T.</h3>
+    <p>Koordinator Sekbid 2</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Alvida%20Wahyu%20X-11.jpg"><p>Alvida Wahyu A.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Fajar%20Hardiansyah.jpg"><p>Fajar Hardiansyah</p></div>
+    </div>
+</div>
+
+<!-- SEKBD 3 -->
+<div class="person">
+    <img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Sinta%20Wati.jpg">
+    <h3>Sinta Wati</h3>
+    <p>Koordinator Sekbid 3</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/ilham.jpeg"><p>Akhmad Ilham M.R.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Clarance%20Sheryline%20X4.jpg"><p>Clarance Sheryline R.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Pandu%20Apvan%20P.%20X-8.jpg"><p>Pandu Apvan P.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/widia%20ayu.jpg"><p>Widia Ayu L.</p></div>
+    </div>
+</div>
+
+<!-- SEKBD 4 -->
+<div class="person">
+    <img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Vita%20Febri%20Al%20Maidah.jpg">
+    <h3>Vita Febri A.</h3>
+    <p>Koordinator Sekbid 4</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/CULVAR%20ZAMIIRYASER.jpg"><p>Culvar Zamir S.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Rehan.jpeg"><p>Rayhan Achmad A.K.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Sinta%20Brilliany%20X-12_.jpg"><p>Sinta Brilliany A.P.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Moreino-Brian_X-3.jpg"><p>Moreino Brian A.</p></div>
+    </div>
+</div>
+
+<!-- SEKBD 5–10 (POLA SAMA, AMAN) -->
+    <div class="person">
+    <img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/VELICIA%20NOVITA.jpg">
+    <h3>Velicia Novita H.</h3>
+    <p>Koordinator Sekbid 5</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Melati%20Bintang%20Hermawan%20X-2.jpg"><p>Melati Bintang H.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Didin%20wahyu.jpg"><p>Didin Wahyu S.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Keyza%20Teresia.jpg"><p>Keyza Teresia P.B.</p></div>
+    </div>
+</div>
+
+    <div class="person">
+    <img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/aini.jpg">
+    <h3>Dewi Anggraeni P.</h3>
+    <p>Koordinator Sekbid 6</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Olivia%20Wahyuningtyas%20X8.jpg"><p>Olivia Wahyuningtyas</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/anugrah%20desvita%20f_X-4%20.jpg"><p>Anugrah Desvita F.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Aliyatun%20Nasywah_.jpg"><p>Aliyatun Nasywah</p></div>
+    </div>
+</div>
+
+    <div class="person">
+    <img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Zivana%20Putri%20(1).jpg">
+    <h3>Zivana Putri L.</h3>
+    <p>Koordinator Sekbid 7</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/M.%20Azzam%20Abdad%20Langit%20X-1.jpg"><p>M. Azzam A.L.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/SYIFA%20YUNITA%20X-4.jpg"><p>Syifa Yunita P.A.</p></div>
+    </div>
+</div>
+
+    <div class="person">
+    <img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/ELFAYRA%20RENATA.jpg">
+    <h3>Elfayra Renata C.N</h3>
+    <p>Koordinator Sekbid 8</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Gabrielle%20Jessica%20Putri%20X-2_.jpg"><p>Gabrielle Jessica P.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Dhierra_X12.jpeg"><p>Dhierra Arthana P.P.</p></div>
+    </div>
+</div>
+
+    <div class="person">
+    <img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/olip.jpeg">
+    <h3>Qholivia Ayuning P.</h3>
+    <p>Koordinator Sekbid 9</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Nayaka%20Rafiqi%20A_la.jpg"><p>Nayaka Rafiqi A.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Naysila%20zahra_.jpg"><p>Naysila Zahra</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Zahrah-alita.jpg"><p>Zahrah Alita R.N.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Najwa%20Amira%20.jpg"><p>Najwa Amira S.</p></div>
+    </div>
+</div>
+
+    <div class="person">
+    <img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/kwinsa.jpeg">
+    <h3>Queensa Aliyy R.B.</h3>
+    <p>Koordinator Sekbid 10</p>
+    <div class="sub-level">
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Maulana%20Agra%20Y.jpg"><p>Maulana Agra Y.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Syahfira%20Dewi%20X9.jpg"><p>Syahfira Dewi P.P.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/El%20Sarisha%20Kurnia%20Putri%20.jpg"><p>El Sarisha K.P.</p></div>
+        <div class="sub-person"><img src="https://raw.githubusercontent.com/osmansage/ospksmansage/main/Bela%20Erza.jpeg"><p>Bella Erza M.</p></div>
+    </div>
+</div>
+<!-- (sudah kamu isi, tidak aku ubah strukturnya) -->
+
+</div>
+</div>
+
+</body>
+</html>
