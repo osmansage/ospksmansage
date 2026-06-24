@@ -230,10 +230,45 @@
             color: white;
         }
 
-        .button.secondary {
-            border: 1px solid #cbd5e1;
-            color: #004080;
-            background: white;
+         .back-btn {
+            width: 175px;
+            height: 56px;
+            background: #ffffff;
+            color: #000000;
+            border: none;
+            border-radius: 16px;
+            position: relative;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .back-icon {
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            width: 25%;
+            height: 48px;
+            background: #4ade80;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: width 0.5s ease;
+            z-index: 10;
+        }
+
+        .back-btn:hover .back-icon {
+            width: 184px;
+        }
+
+        .back-btn p {
+            margin: 0;
+            line-height: 56px;
+            padding-left: 23px;
+            text-align: center;
+            transform: translateX(8px);
         }
 
         aside {
@@ -459,7 +494,26 @@
                 <p>Dengan terselenggaranya classmeeting ini, diharapkan siswa SMAGE dapat terus mengembangkan potensi diri, menjunjung tinggi kerja sama, serta menjaga semangat kebersamaan di lingkungan sekolah.</p>
 
                 <div class="article-actions">
-                    <a href="index.html" class="button secondary">Kembali ke Beranda</a>
+                    <a href="index.html" class="back-btn">
+                        <div class="back-icon">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 1024 1024"
+                                width="25"
+                                height="25"
+                            >
+                                <path
+                                    d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+                                    fill="#000000"
+                                ></path>
+                                <path
+                                    d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+                                    fill="#000000"
+                                ></path>
+                            </svg>
+                        </div>
+                        <p>Kembali</p>
+                    </a>
                 </div>
             </div>
         </article>
