@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSIS MPK SMAN 1 Gedeg Telah Mengadakan D'OFTICLASSICO S6 dalam rangka penyegaran setelah Sumatif Akhir Semester 2</title>
+    <title>D'OFTICLASSICO S6 | OSIS MPK SMAN 1 Gedeg</title>
     <style>
         * {
             box-sizing: border-box;
@@ -137,6 +137,7 @@
             color: #0f172a;
             font-size: 42px;
             line-height: 1.18;
+            letter-spacing: 0;
         }
 
         .excerpt {
@@ -193,6 +194,35 @@
             line-height: 1.3;
         }
 
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin: 26px 0;
+        }
+
+        .info-box {
+            padding: 18px;
+            border-radius: 8px;
+            background: #f1f7ff;
+            border: 1px solid #dbeafe;
+        }
+
+        .info-box span {
+            display: block;
+            margin-bottom: 8px;
+            color: #64748b;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .info-box strong {
+            color: #004080;
+            font-size: 18px;
+            line-height: 1.35;
+        }
+
         blockquote {
             margin: 28px 0;
             padding: 20px 24px;
@@ -204,7 +234,7 @@
             font-weight: 700;
         }
 
-        .article-actions {
+        .button-row {
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
@@ -253,32 +283,34 @@
             font-size: 22px;
         }
 
+        .schedule-list,
         .related-list {
             display: grid;
             gap: 14px;
         }
 
+        .schedule-item,
         .related-item {
             padding-bottom: 14px;
             border-bottom: 1px solid #e5e7eb;
         }
 
+        .schedule-item:last-child,
         .related-item:last-child {
             padding-bottom: 0;
             border-bottom: 0;
         }
 
+        .schedule-item strong,
         .related-item a {
+            display: block;
             color: #0f172a;
             text-decoration: none;
             font-weight: 700;
             line-height: 1.5;
         }
 
-        .related-item a:hover {
-            color: #004080;
-        }
-
+        .schedule-item span,
         .related-item span {
             display: block;
             margin-top: 6px;
@@ -286,36 +318,8 @@
             font-size: 13px;
         }
 
-        .status {
-            display: inline-flex;
-            align-items: center;
-            margin-top: 16px;
-            padding: 8px 12px;
-            border-radius: 8px;
-            background: #ecfdf5;
-            color: #047857;
-            font-size: 13px;
-            font-weight: 700;
-        }
-
-        .contact-list {
-            display: grid;
-            gap: 10px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            color: #475569;
-            line-height: 1.6;
-        }
-
-        .contact-list a {
+        .related-item a:hover {
             color: #004080;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        .contact-list a:hover {
-            text-decoration: underline;
         }
 
         footer {
@@ -387,6 +391,10 @@
             .featured-image {
                 height: 240px;
             }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -415,7 +423,7 @@
             <ul class="breadcrumb">
                 <li><a href="index.html">Beranda</a></li>
                 <li>/</li>
-                <li><a href="index.html#informasi">Informasi</a></li>
+                <li><a href="index.html#informasi">Event Terbaru</a></li>
                 <li>/</li>
                 <li>D'OFTICLASSICO S6</li>
             </ul>
@@ -425,40 +433,58 @@
     <main class="article-wrap">
         <article>
             <div class="article-head">
-                <span class="category">Informasi Sekolah</span>
-                <h1>OSIS SMAN 1 Gedeg Telah Mengadakan D'OFTICLASSICO S6 dalam rangka penyegaran setelah Sumatif Akhir Semester 2</h1>
-                <p class="excerpt">D'OFTICLASSICO adalah nama kegiatan Classmeeting pada semester genap yang bertujuan untuk memperkuat solidaritas dan kekompakan siswa-siswi SMAN 1 Gedeg.</p>
+                <span class="category">Event Sekolah</span>
+                <h1>D'OFTICLASSICO S6 Hadir sebagai Ajang Penyegaran Setelah Ujian</h1>
+                <p class="excerpt">OSIS MPK SMAN 1 Gedeg menghadirkan rangkaian lomba dan kegiatan kebersamaan untuk membangun semangat siswa setelah masa ujian.</p>
                 <div class="meta">
-                    <span>Ditulis oleh <strong>Tim Publikasi OSIS SMAN 1 Gedeg</strong></span>
-                    <span>22 Juni 2026</span>
-                    <span>SMAN 1 Gedeg</span>
+                    <span>Diselenggarakan oleh <strong>OSIS MPK SMAN 1 Gedeg</strong></span>
+                    <span>15 Juni 2026</span>
+                    <span>Lingkungan SMAN 1 Gedeg</span>
                 </div>
             </div>
-            
-            <img src="Pak Jupri.PNG" alt="Dokumentasi kegiatan SMAN 1 Gedeg" class="featured-image">
-            <p class="caption">Sambutan dari Waka Humas SMAN 1 Gedeg pada pembukaan secara simbolis D'OFTICLASSICO S6.</p>
+
+            <img src="eldeKAES.jpeg" alt="Dokumentasi lingkungan SMAN 1 Gedeg" class="featured-image">
+            <p class="caption">D'OFTICLASSICO S6 menjadi wadah kegiatan positif bagi siswa setelah menyelesaikan ujian.</p>
 
             <div class="article-body">
-                <p>Setelah berakhirnya kegiatan Sumatif Akhir Semester (SAS), OSIS SMAN 1 Gedeg telah mengadakan kegiatan classmeeting yang bernama D'OFTICLASSICO S6 sebagai sarana untuk mengisi waktu luang siswa dengan kegiatan yang positif dan menyenangkan. Kegiatan ini menjadi momen yang ditunggu-tunggu karena menghadirkan berbagai perlombaan antar kelas yang seru dan penuh semangat.</p>
+                <p>D'OFTICLASSICO S6 merupakan kegiatan sekolah yang dirancang sebagai ruang penyegaran bagi siswa setelah menyelesaikan ujian. Melalui event ini, siswa dapat kembali membangun kebersamaan, sportivitas, dan semangat berkompetisi dalam suasana yang menyenangkan.</p>
 
-                <p>D'OFTICLASSICO S6 tahun ini dilaksanakan di lapangan utama sekolah selama dua hari, mulai tanggal 15 dan 17 Juni 2026. Kegiatan dibuka secara resmi oleh wakil kepala sekolah dengan sambutan yang menekankan pentingnya sportivitas dan kebersamaan antar siswa.</p>
+                <p>Kegiatan ini menjadi salah satu program OSIS MPK SMAN 1 Gedeg untuk menghadirkan pengalaman sekolah yang aktif, kreatif, dan berkesan. Setiap rangkaian acara disusun agar siswa dapat berpartisipasi secara positif sekaligus mempererat hubungan antarkelas.</p>
+
+                <div class="info-grid">
+                    <div class="info-box">
+                        <span>Tanggal</span>
+                        <strong>15 Juni 2026</strong>
+                    </div>
+                    <div class="info-box">
+                        <span>Lokasi</span>
+                        <strong>Lingkungan SMAN 1 Gedeg</strong>
+                    </div>
+                    <div class="info-box">
+                        <span>Peserta</span>
+                        <strong>Siswa SMAN 1 Gedeg</strong>
+                    </div>
+                    <div class="info-box">
+                        <span>Penyelenggara</span>
+                        <strong>OSIS MPK SMAN 1 Gedeg</strong>
+                    </div>
+                </div>
 
                 <blockquote>
-                    D'OFTICLASSICO S6 bukan hanya sekedar event tahunan, namun sebagai bentuk komitmen OSIS SMAN 1 Gedeg untuk menciptakan lingkungan sekolah yang positif dan mendukung minat bakat siswa-siswi SMAN 1 Gedeg.
+                    Kegiatan ini menjadi momentum untuk melepas penat setelah ujian dan menghidupkan kembali semangat kebersamaan di lingkungan sekolah.
                 </blockquote>
 
-                <h2>Jenis perlombaan pada D'OFTICLASSICO S6</h2>
-                <p>Classmeeting tahun ini dilaksanakan di lingkungan sekolah dengan berbagai cabang lomba yang unik dan menarik. OSMANSAGE menghadirkan beberapa perlombaan seperti Ekor Beracun, Estafet Balon, E-Sport, dan Clean and Creative. Setiap lomba dirancang untuk mengasah kerja sama tim, ketangkasan, strategi, serta kreativitas siswa dalam berbagai bidang.</p>
+                <h2>Tujuan Kegiatan</h2>
+                <p>D'OFTICLASSICO S6 bertujuan menciptakan ruang ekspresi bagi siswa melalui kegiatan lomba, kerja sama tim, dan interaksi positif. Selain menjadi hiburan setelah ujian, event ini juga mendorong siswa untuk menjunjung sportivitas dan kekompakan.</p>
 
-                <p>Salah satu kegiatan yang menjadi fokus utama dalam classmeeting ini adalah SMAGE Funrun 3K. Lomba lari ini tidak hanya menekankan aspek kecepatan, tetapi juga menumbuhkan semangat hidup sehat di kalangan siswa. Seluruh peserta terlihat antusias mengikuti funrun dengan penuh energi dan semangat kebersamaan.</p>
+                <h2>Rangkaian Acara</h2>
+                <p>Rangkaian kegiatan dapat berisi lomba antarkelas, penampilan siswa, dokumentasi kegiatan, serta sesi kebersamaan. Detail teknis lomba dan jadwal pelaksanaan dapat diumumkan melalui kanal resmi OSIS MPK SMAN 1 Gedeg.</p>
 
-                <p>Selain itu, lomba Clean and Creative juga menjadi sorotan karena mendorong setiap kelas untuk menjaga kebersihan sekaligus menampilkan kreativitas dalam menata lingkungan kelas. Sementara itu, cabang seperti Ekor Beracun, Estafet Balon, dan E-Sport menghadirkan keseruan tersendiri yang membuat suasana classmeeting semakin meriah.</p>
+                <h2>Informasi Pendaftaran</h2>
+                <p>Peserta dapat mengikuti arahan panitia atau menghubungi pengurus OSIS MPK untuk informasi teknis lebih lanjut. Pastikan setiap kelas memperhatikan jadwal, aturan lomba, dan ketentuan yang diberikan oleh panitia.</p>
 
-                <p>Kegiatan ini tidak hanya sekadar ajang kompetisi, tetapi juga sarana untuk memperkuat solidaritas antar siswa. Nilai sportivitas selalu ditekankan agar seluruh peserta dapat menerima hasil dengan lapang dada, baik kemenangan maupun kekalahan.</p>
-
-                <p>Dengan terselenggaranya classmeeting ini, diharapkan siswa SMAGE dapat terus mengembangkan potensi diri, menjunjung tinggi kerja sama, serta menjaga semangat kebersamaan di lingkungan sekolah.</p>
-
-                <div class="article-actions">
+                <div class="button-row">
+                    <a href="kritiksaran.html" class="button primary">Hubungi Panitia</a>
                     <a href="index.html" class="button secondary">Kembali ke Beranda</a>
                 </div>
             </div>
@@ -466,47 +492,46 @@
 
         <aside>
             <section class="side-card">
-                <h2>Berita Terkait</h2>
-                <div class="related-list">
-                    <div class="related-item">
-                        <a href="kritiksaran.html">Kritik dan saran OSIS MPK dapat disampaikan secara online</a>
-                        <span>Layanan Aspirasi</span>
+                <h2>Ringkasan Event</h2>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <strong>15 Juni 2026</strong>
+                        <span>Pelaksanaan kegiatan di SMAN 1 Gedeg</span>
                     </div>
-                    <div class="related-item">
-                        <a href="strukturorganisasi.html">Kenali struktur pengurus OSIS SMAN 1 Gedeg</a>
-                        <span>Organisasi</span>
+                    <div class="schedule-item">
+                        <strong>Setelah masa ujian</strong>
+                        <span>Kegiatan penyegaran dan lomba siswa</span>
                     </div>
-                    <div class="related-item">
-                        <a href="strukturmpk.html">Kenali struktur pengurus MPK SMAN 1 Gedeg</a>
-                        <span>Organisasi</span>
+                    <div class="schedule-item">
+                        <strong>Peserta internal</strong>
+                        <span>Diikuti oleh siswa SMAN 1 Gedeg</span>
                     </div>
                 </div>
-                <span class="status">Terbuka untuk pembaruan</span>
             </section>
 
             <section class="side-card">
-                <h2>Kontak Resmi</h2>
-                <ul class="contact-list">
-                    <li>Email: <a href="mailto:osissmansage0@gmail.com">osissmansage0@gmail.com</a></li>
-                    <li>Instagram: <a href="https://www.instagram.com/osismpksmage" target="_blank">@osismpksmage</a></li>
-                    <li>TikTok: <a href="https://www.tiktok.com/@ofc.osismpksmage1" target="_blank">@ofc.osismpksmage1</a></li>
-                </ul>
-            </section>
-
-            <section class="side-card">
-                <h2>Kontak Redaksi</h2>
-                <ul class="contact-list">
-                    <li>Email: <a href="mailto:osissmansage0@gmail.com">osissmansage0@gmail.com</a></li>
-                    <li>Instagram: <a href="https://www.instagram.com/osismpksmage" target="_blank">@osismpksmage</a></li>
-                    <li>TikTok: <a href="https://www.tiktok.com/@ofc.osismpksmage1" target="_blank">@ofc.osismpksmage1</a></li>
-                </ul>
+                <h2>Informasi Lainnya</h2>
+                <div class="related-list">
+                    <div class="related-item">
+                        <a href="Informasi.html">Majalah MARS Edisi 65 Tahun 2026 telah tersedia</a>
+                        <span>Publikasi Sekolah</span>
+                    </div>
+                    <div class="related-item">
+                        <a href="strukturorganisasi.html">Struktur OSIS SMAN 1 Gedeg</a>
+                        <span>Organisasi</span>
+                    </div>
+                    <div class="related-item">
+                        <a href="kritiksaran.html">Sampaikan kritik dan saran untuk OSIS MPK</a>
+                        <span>Aspirasi</span>
+                    </div>
+                </div>
             </section>
         </aside>
     </main>
 
     <footer>
         <p>&copy; 2026 OSIS MPK SMAN 1 Gedeg. Semua hak dilindungi.</p>
-        <p>Alamat: JL. Pendidikan 55, Gedeg, Mojokerto, Jawa Timur</p>
+        <p>JL. Pendidikan 55, Gedeg, Mojokerto, Jawa Timur</p>
     </footer>
 </body>
 </html>
