@@ -3,570 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSIS SMAN 1 Gedeg membuka pendaftaran untuk Calon Pengurus OSIS 2026/2027</title>
-    <link rel="icon" type="png" href="logotanpabg (3).png">
+    <title>Open Recruitment OSIS SMAN 1 Gedeg 2026</title>
+    <link rel="icon" type="image/png" href="logotanpabg (3).png">
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #1f2937;
-            background: #f6f8fb;
-        }
-
-        header {
-            background: #004080;
-            color: white;
-            padding: 14px 28px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 24px;
-            position: sticky;
-            top: 0;
-            z-index: 20;
-            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.16);
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            min-width: 240px;
-            font-weight: 700;
-        }
-
-        .brand img {
-            width: auto;
-            height: 44px;
-        }
-
-        nav ul {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        nav a:hover,
-        nav a.active {
-            text-decoration: underline;
-            text-underline-offset: 5px;
-        }
-
-        .page-top {
-            background: white;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .top-inner {
-            max-width: 1160px;
-            margin: 0 auto;
-            padding: 28px 24px 18px;
-        }
-
-        .breadcrumb {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        .breadcrumb a {
-            color: #004080;
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        .article-wrap {
-            max-width: 1160px;
-            margin: 0 auto;
-            padding: 38px 24px 64px;
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) 320px;
-            gap: 38px;
-            align-items: start;
-        }
-
-        article,
-        .side-card {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
-        }
-
-        article {
-            overflow: hidden;
-        }
-
-        .article-head {
-            padding: 34px 34px 24px;
-        }
-
-        .category {
-            display: inline-block;
-            margin-bottom: 16px;
-            padding: 7px 12px;
-            border-radius: 6px;
-            background: #e7f1ff;
-            color: #004080;
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        h1 {
-            margin: 0;
-            color: #0f172a;
-            font-size: 42px;
-            line-height: 1.18;
-        }
-
-        .excerpt {
-            margin: 18px 0 0;
-            color: #475569;
-            font-size: 18px;
-            line-height: 1.7;
-        }
-
-        .meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 22px;
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        .meta strong {
-            color: #004080;
-        }
-
-        .featured-image {
-            width: 100%;
-            height: 430px;
-            object-fit: cover;
-            display: block;
-            background: #dbeafe;
-        }
-
-        .caption {
-            margin: 0;
-            padding: 10px 34px 0;
-            color: #64748b;
-            font-size: 13px;
-            line-height: 1.5;
-        }
-
-        .article-body {
-            padding: 26px 34px 38px;
-        }
-
-        .article-body p {
-            margin: 0 0 18px;
-            color: #334155;
-            font-size: 17px;
-            line-height: 1.85;
-        }
-
-        .article-body h2 {
-            margin: 30px 0 14px;
-            color: #004080;
-            font-size: 26px;
-            line-height: 1.3;
-        }
-
-        blockquote {
-            margin: 28px 0;
-            padding: 20px 24px;
-            border-left: 5px solid #007bff;
-            background: #f1f7ff;
-            color: #1e3a8a;
-            font-size: 18px;
-            line-height: 1.7;
-            font-weight: 700;
-        }
-
-        .article-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 28px;
-            padding-top: 24px;
-            border-top: 1px solid #e5e7eb;
-        }
-
-        .button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 42px;
-            padding: 10px 16px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-        }
-
-        .button.primary {
-            background: #004080;
-            color: white;
-        }
-
-         .back-btn {
-            width: 225px;
-            height: 56px;
-            background: #ffffff;
-            color: #000000;
-            border: none;
-            border-radius: 16px;
-            position: relative;
-            font-size: 20px;
-            font-weight: 600;
-            cursor: pointer;
-            overflow: hidden;
-        }
-
-        .back-icon {
-            position: absolute;
-            left: 4px;
-            top: 4px;
-            width: 25%;
-            height: 48px;
-            background: #4ade80;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: width 0.5s ease;
-            z-index: 10;
-        }
-
-        .back-btn:hover .back-icon {
-            width: 234px;
-        }
-
-        .back-btn p {
-            margin: 0;
-            line-height: 56px;
-            padding-left: 23px;
-            text-align: center;
-            transform: translateX(8px);
-        }
-
-        aside {
-            position: sticky;
-            top: 96px;
-            display: grid;
-            gap: 18px;
-        }
-
-        .side-card {
-            padding: 22px;
-        }
-
-        .side-card h2 {
-            margin: 0 0 16px;
-            color: #004080;
-            font-size: 22px;
-        }
-
-        .related-list {
-            display: grid;
-            gap: 14px;
-        }
-
-        .related-item {
-            padding-bottom: 14px;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .related-item:last-child {
-            padding-bottom: 0;
-            border-bottom: 0;
-        }
-
-        .related-item a {
-            color: #0f172a;
-            text-decoration: none;
-            font-weight: 700;
-            line-height: 1.5;
-        }
-
-        .related-item a:hover {
-            color: #004080;
-        }
-
-        .related-item span {
-            display: block;
-            margin-top: 6px;
-            color: #64748b;
-            font-size: 13px;
-        }
-
-        .status {
-            display: inline-flex;
-            align-items: center;
-            margin-top: 16px;
-            padding: 8px 12px;
-            border-radius: 8px;
-            background: #ecfdf5;
-            color: #047857;
-            font-size: 13px;
-            font-weight: 700;
-        }
-
-        .contact-list {
-            display: grid;
-            gap: 10px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            color: #475569;
-            line-height: 1.6;
-        }
-
-        .contact-list a {
-            color: #004080;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        .contact-list a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background: #004080;
-            color: white;
-            text-align: center;
-            padding: 24px;
-        }
-
-        footer p {
-            margin: 6px 0;
-            line-height: 1.5;
-        }
-
-        @media (max-width: 920px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .article-wrap {
-                grid-template-columns: 1fr;
-            }
-
-            aside {
-                position: static;
-            }
-
-            h1 {
-                font-size: 34px;
-            }
-
-            .featured-image {
-                height: 330px;
-            }
-        }
-
-        @media (max-width: 560px) {
-            header {
-                padding: 14px 18px;
-            }
-
-            .brand {
-                flex-wrap: wrap;
-            }
-
-            .top-inner,
-            .article-wrap {
-                padding-left: 18px;
-                padding-right: 18px;
-            }
-
-            .article-head,
-            .article-body,
-            .caption {
-                padding-left: 22px;
-                padding-right: 22px;
-            }
-
-            h1 {
-                font-size: 29px;
-            }
-
-            .excerpt,
-            .article-body p {
-                font-size: 16px;
-            }
-
-            .featured-image {
-                height: 240px;
-            }
-        }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; color: #1f2937; background: #f6f8fb; }
+        header { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 14px 28px; color: #fff; background: #004080; box-shadow: 0 5px 18px rgba(0,0,0,.16); }
+        .brand { display: flex; align-items: center; gap: 10px; min-width: 240px; font-weight: 700; }
+        .brand img { width: auto; height: 44px; }
+        nav ul { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin: 0; padding: 0; list-style: none; }
+        nav a { color: #fff; font-size: 14px; font-weight: 600; text-decoration: none; }
+        nav a:hover, nav a.active { text-decoration: underline; text-underline-offset: 5px; }
+        .page-top { background: #fff; border-bottom: 1px solid #e5e7eb; }
+        .top-inner { max-width: 1160px; margin: 0 auto; padding: 28px 24px 18px; }
+        .breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; color: #64748b; font-size: 14px; }
+        .breadcrumb a { color: #004080; font-weight: 700; text-decoration: none; }
+        .article-wrap { display: grid; grid-template-columns: minmax(0,1fr) 320px; gap: 38px; align-items: start; max-width: 1160px; margin: 0 auto; padding: 38px 24px 64px; }
+        article, .side-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 14px 34px rgba(15,23,42,.08); }
+        article { overflow: hidden; }
+        .article-head { padding: 34px 34px 24px; }
+        .category { display: inline-block; margin-bottom: 16px; padding: 7px 12px; border-radius: 6px; background: #e7f1ff; color: #004080; font-size: 13px; font-weight: 700; text-transform: uppercase; }
+        h1 { margin: 0; color: #0f172a; font-size: 42px; line-height: 1.18; }
+        .excerpt { margin: 18px 0 0; color: #475569; font-size: 18px; line-height: 1.7; }
+        .meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; color: #64748b; font-size: 14px; }
+        .meta strong { color: #004080; }
+        .featured-image { display: block; width: 100%; height: 430px; object-fit: cover; background: #dbeafe; }
+        .caption { margin: 0; padding: 10px 34px 0; color: #64748b; font-size: 13px; line-height: 1.5; }
+        .article-body { padding: 26px 34px 38px; }
+        .article-body p { margin: 0 0 18px; color: #334155; font-size: 17px; line-height: 1.85; }
+        .article-body h2 { margin: 34px 0 14px; color: #004080; font-size: 26px; line-height: 1.3; }
+        .article-body h3 { margin: 24px 0 7px; color: #1e3a5f; font-size: 19px; line-height: 1.4; }
+        .article-body ul { margin: 0 0 22px; padding-left: 24px; color: #334155; font-size: 17px; line-height: 1.85; }
+        blockquote { margin: 28px 0; padding: 20px 24px; border-left: 5px solid #007bff; background: #f1f7ff; color: #1e3a8a; font-size: 18px; font-weight: 700; line-height: 1.7; }
+        .article-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
+        .button { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 10px 16px; border-radius: 6px; font-size: 14px; font-weight: 700; text-decoration: none; }
+        .button.primary { background: #004080; color: #fff; }
+        aside { position: sticky; top: 96px; display: grid; gap: 18px; }
+        .side-card { padding: 22px; }
+        .side-card h2 { margin: 0 0 16px; color: #004080; font-size: 22px; }
+        .related-list { display: grid; gap: 14px; }
+        .related-item { padding-bottom: 14px; border-bottom: 1px solid #e5e7eb; }
+        .related-item:last-child { padding-bottom: 0; border-bottom: 0; }
+        .related-item a { color: #0f172a; font-weight: 700; line-height: 1.5; text-decoration: none; }
+        .related-item span { display: block; margin-top: 6px; color: #64748b; font-size: 13px; }
+        .status { display: inline-flex; margin-top: 16px; padding: 8px 12px; border-radius: 8px; background: #ecfdf5; color: #047857; font-size: 13px; font-weight: 700; }
+        .contact-list { display: grid; gap: 10px; margin: 0; padding: 0; color: #475569; line-height: 1.6; list-style: none; }
+        .contact-list a { color: #004080; font-weight: 700; text-decoration: none; }
+        footer { padding: 24px; background: #004080; color: #fff; text-align: center; }
+        footer p { margin: 6px 0; line-height: 1.5; }
+        @media (max-width:920px) { header { flex-direction: column; align-items: flex-start; } .article-wrap { grid-template-columns: 1fr; } aside { position: static; } h1 { font-size: 34px; } .featured-image { height: 330px; } }
+        @media (max-width:560px) { header { padding: 14px 18px; } .brand { flex-wrap: wrap; } .top-inner,.article-wrap { padding-left: 18px; padding-right: 18px; } .article-head,.article-body,.caption { padding-left: 22px; padding-right: 22px; } h1 { font-size: 29px; } .excerpt,.article-body p,.article-body ul { font-size: 16px; } .featured-image { height: 240px; } }
     </style>
 </head>
 <body>
     <header>
-        <div class="brand">
-            <img src="logotanpabg (3).png" alt="Logo OSIS">
-            <span>OSIS MPK SMAN 1 GEDEG</span>
-            <img src="mpk.png" alt="Logo MPK">
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="aboutosis.html">Tentang</a></li>
-                <li><a href="visimisi.html">Visi Misi</a></li>
-                <li><a href="strukturorganisasi.html">Struktur OSIS</a></li>
-                <li><a href="strukturmpk.html">Struktur MPK</a></li>
-                <li><a href="Informasi.html" class="active">Informasi</a></li>
-            </ul>
-        </nav>
+        <div class="brand"><img src="logotanpabg (3).png" alt="Logo OSIS"><span>OSIS MPK SMAN 1 GEDEG</span><img src="mpk.png" alt="Logo MPK"></div>
+        <nav><ul><li><a href="index.html">Beranda</a></li><li><a href="aboutosis.html">Tentang</a></li><li><a href="visimisi.html">Visi Misi</a></li><li><a href="strukturorganisasi.html">Struktur OSIS</a></li><li><a href="strukturmpk.html">Struktur MPK</a></li><li><a href="Informasi.html" class="active">Informasi</a></li></ul></nav>
     </header>
-
-    <section class="page-top">
-        <div class="top-inner">
-            <ul class="breadcrumb">
-                <li><a href="index.html">Beranda</a></li>
-                <li>/</li>
-                <li><a href="index.html#informasi">Informasi</a></li>
-                <li>/</li>
-                <li>Open Recruitment OSIS 2026/2027</li>
-            </ul>
-        </div>
-    </section>
-
+    <section class="page-top"><div class="top-inner"><ul class="breadcrumb"><li><a href="index.html">Beranda</a></li><li>/</li><li><a href="index.html#informasi">Informasi</a></li><li>/</li><li>Open Recruitment OSIS 2026</li></ul></div></section>
     <main class="article-wrap">
         <article>
             <div class="article-head">
-                <span class="category">Open Recruitment 2026/2027</span>
-                <h1>Open Recruitment OSIS SMAN 1 Gedeg Masa Bhakti 2026/2027</h1>
-                <p class="excerpt">OSIS SMAN 1 Gedeg telah membuka pendaftaran calon pengurus OSIS Masa Bhakti 2026/2027.</p>
-                <div class="meta">
-                    <span>Ditulis oleh <strong>Tim Publikasi OSIS SMAN 1 Gedeg</strong></span>
-                    <span>19 Juli 2026</span>
-                    <span>SMAN 1 Gedeg</span>
-                </div>
+                <span class="category">Open Recruitment 2026</span>
+                <h1>&#x1F680; Open Recruitment OSIS SMAN 1 Gedeg 2026</h1>
+                <p class="excerpt">Jadilah Bagian dari Tim yang Menciptakan Perubahan.</p>
+                <div class="meta"><span>Ditulis oleh <strong>Tim Publikasi OSIS SMAN 1 Gedeg</strong></span><span>2026</span><span>SMAN 1 Gedeg</span></div>
             </div>
-
             <img src="eldeKAES.jpeg" alt="Kegiatan OSIS SMAN 1 Gedeg" class="featured-image">
-            <p class="caption">OSIS SMAN 1 Gedeg adalah ruang untuk belajar, berkarya, dan menciptakan perubahan bersama.</p>
-
+            <p class="caption">OSIS SMAN 1 Gedeg: tempat untuk berkembang, belajar, dan meninggalkan jejak bagi sekolah.</p>
             <div class="article-body">
                 <p>OSIS bukan hanya organisasi, tetapi tempat untuk berkembang, belajar, dan meninggalkan jejak bagi sekolah. Di sinilah ide-ide diwujudkan, kepemimpinan dibentuk, dan pengalaman berharga dimulai.</p>
+                <p>Jika kamu memiliki semangat untuk belajar, ingin menantang diri sendiri, serta ingin berkontribusi bagi SMAN 1 Gedeg, inilah kesempatanmu.</p>
+                <blockquote>&#x2728; Mari tumbuh, berkarya, dan menginspirasi bersama OSIS.</blockquote>
+                <div class="article-actions" id="daftar"><a class="button primary" href="mailto:osissmansage0@gmail.com?subject=Pendaftaran%20Open%20Recruitment%20OSIS%202026">Daftar Sekarang</a></div>
 
-                <p>Jika kamu memiliki semangat untuk belajar, ingin menantang diri sendiri, serta ingin berkontribusi bagi SMAN 1 Gedeg, inilah kesempatanmu. Mari tumbuh, berkarya, dan menginspirasi bersama OSIS.</p>
-
-                <blockquote>
-                    Satu langkah hari ini dapat memberi dampak bertahun-tahun. Setiap pemimpin hebat juga pernah memulai dari langkah kecil.
-                </blockquote>
-
-                <h2>🌟 Mengapa Harus Bergabung dengan OSIS?</h2>
+                <h2>&#x1F31F; Mengapa Harus Bergabung dengan OSIS?</h2>
                 <p>Bergabung dengan OSIS bukan hanya tentang menjadi panitia acara. Kamu akan memperoleh pengalaman yang berguna selama di sekolah hingga dunia perkuliahan dan pekerjaan.</p>
-                <p>Di OSIS kamu dapat mengembangkan jiwa kepemimpinan, memperluas relasi, meningkatkan kemampuan public speaking, serta mengasah kreativitas melalui konsep acara, publikasi, dan konten media sosial.</p>
-                <p>Kamu juga akan belajar mengelola event, melatih problem solving, membangun kerja sama tim, menambah portofolio, memperoleh sertifikat kepengurusan, dan menciptakan kenangan berharga bersama tim.</p>
+                <h3>&#x1F3AF; Mengembangkan Jiwa Kepemimpinan</h3><p>Belajar mengambil keputusan, memimpin tim, dan bertanggung jawab terhadap berbagai kegiatan sekolah.</p>
+                <h3>&#x1F91D; Memperluas Relasi</h3><p>Bertemu teman-teman baru dari berbagai kelas, bekerja sama dengan guru, alumni, hingga organisasi dari sekolah lain.</p>
+                <h3>&#x1F3A4; Meningkatkan Public Speaking</h3><p>Terbiasa berbicara di depan banyak orang, memandu acara, berdiskusi, hingga menyampaikan ide dengan percaya diri.</p>
+                <h3>&#x1F4A1; Mengasah Kreativitas</h3><p>Mulai dari membuat konsep acara, desain publikasi, konten media sosial, hingga menciptakan inovasi untuk sekolah.</p>
+                <h3>&#x1F4C5; Belajar Mengelola Event</h3><p>Terlibat langsung dalam perencanaan dan pelaksanaan berbagai kegiatan sekolah, dari skala kecil hingga acara besar.</p>
+                <h3>&#x1F9E0; Melatih Problem Solving</h3><p>Menghadapi tantangan nyata dan belajar mencari solusi bersama tim.</p>
+                <h3>&#x1F465; Membangun Kerja Sama Tim</h3><p>Belajar berkomunikasi, menghargai pendapat, dan bekerja sama untuk mencapai tujuan bersama.</p>
+                <h3>&#x1F4C2; Menambah Portofolio</h3><p>Pengalaman organisasi menjadi nilai tambah saat mendaftar beasiswa, perguruan tinggi, maupun program kepemudaan.</p>
+                <h3>&#x1F3C5; Sertifikat Kepengurusan</h3><p>Sebagai bentuk apresiasi atas kontribusi selama menjadi pengurus.</p>
+                <h3>&#x1F4F8; Menciptakan Kenangan Berharga</h3><p>Setiap rapat, persiapan acara, hingga momen sukses bersama akan menjadi pengalaman yang dikenang sepanjang masa.</p>
 
-                <h2>✨ Apa yang Akan Kamu Pelajari?</h2>
-                <p>Leadership, public speaking, event management, teamwork, time management, problem solving, critical thinking, negotiation, design &amp; branding, social media management, dokumentasi kegiatan, administrasi organisasi, penyusunan proposal, manajemen program kerja, serta komunikasi profesional.</p>
-
-                <h2>📈 Kesempatan yang Menantimu</h2>
-                <p>Dengan menjadi bagian dari OSIS, kamu berkesempatan menjadi koordinator atau ketua kegiatan sekolah, berkolaborasi dengan ekstrakurikuler dan organisasi lain, serta mengembangkan ide menjadi program kerja nyata.</p>
-                <p>Kamu juga dapat menjadi representasi siswa dalam berbagai kegiatan, belajar langsung dari guru pembina dan senior organisasi, serta meningkatkan rasa percaya diri melalui pengalaman nyata.</p>
-
-                <h2>💬 Siapa yang Cocok Bergabung?</h2>
-                <p>Kamu tidak harus menjadi siswa yang paling pintar atau paling berpengalaman. Yang kami cari adalah siswa yang memiliki kemauan untuk belajar, bertanggung jawab, disiplin, mau bekerja sama, berani mencoba hal baru, memiliki semangat untuk berkembang, dan siap berkontribusi bagi sekolah.</p>
-                <p>Bersama OSIS SMAN 1 Gedeg, mari ciptakan pengalaman, prestasi, dan perubahan yang akan dikenang. Daftarkan dirimu sekarang dan jadilah bagian dari generasi pemimpin berikutnya!</p>
-
-                <div class="article-actions">
-                    <a href="mailto:osissmansage0@gmail.com?subject=Pendaftaran%20Open%20Recruitment%20OSIS%202026%2F2027" class="back-btn">
-                        <div class="back-icon">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 1024 1024"
-                                width="25"
-                                height="25"
-                            >
-                                <path
-                                    d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
-                                    fill="#000000"
-                                ></path>
-                                <path
-                                    d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
-                                    fill="#000000"
-                                ></path>
-                            </svg>
-                        </div>
-                        <p>Daftar Sekarang</p>
-                    </a>
-                </div>
+                <h2>&#x2728; Apa yang Akan Kamu Pelajari?</h2>
+                <ul><li>Leadership</li><li>Public Speaking</li><li>Event Management</li><li>Teamwork</li><li>Time Management</li><li>Problem Solving</li><li>Critical Thinking</li><li>Negotiation</li><li>Design &amp; Branding</li><li>Social Media Management</li><li>Dokumentasi Kegiatan</li><li>Administrasi Organisasi</li><li>Penyusunan Proposal</li><li>Manajemen Program Kerja</li><li>Komunikasi Profesional</li></ul>
+                <h2>&#x1F4C8; Kesempatan yang Menantimu</h2><p>Dengan menjadi bagian dari OSIS, kamu berkesempatan untuk:</p>
+                <ul><li>Menjadi koordinator atau ketua sebuah kegiatan sekolah.</li><li>Berkolaborasi dengan berbagai ekstrakurikuler dan organisasi.</li><li>Mengembangkan ide menjadi program kerja yang nyata.</li><li>Menjadi representasi siswa dalam berbagai kegiatan sekolah.</li><li>Belajar langsung dari guru pembina dan senior organisasi.</li><li>Meningkatkan rasa percaya diri melalui pengalaman nyata.</li></ul>
+                <h2>&#x1F4AC; Siapa yang Cocok Bergabung?</h2><p>Kamu tidak harus menjadi siswa yang paling pintar atau paling berpengalaman.</p><p>Yang kami cari adalah siswa yang:</p>
+                <ul><li>Memiliki kemauan untuk belajar.</li><li>Bertanggung jawab.</li><li>Disiplin.</li><li>Mau bekerja sama.</li><li>Berani mencoba hal baru.</li><li>Memiliki semangat untuk berkembang.</li><li>Siap berkontribusi bagi sekolah.</li></ul>
+                <h2>&#x1F31F; Satu Langkah Hari Ini, Dampaknya Bertahun-Tahun</h2><p>Setiap kegiatan yang sukses berawal dari tim yang solid. Setiap pemimpin hebat juga pernah memulai dari langkah kecil.</p><p>Sekarang giliranmu untuk mengambil langkah pertama.</p><p>Bersama OSIS SMAN 1 Gedeg, mari ciptakan pengalaman, prestasi, dan perubahan yang akan dikenang.</p><p>&#x1F680; Daftarkan dirimu sekarang dan jadilah bagian dari generasi pemimpin berikutnya!</p>
+                <div class="article-actions"><a class="button primary" href="mailto:osissmansage0@gmail.com?subject=Pendaftaran%20Open%20Recruitment%20OSIS%202026">Daftar Sekarang</a><a class="button" href="index.html">Kembali ke Beranda</a></div>
             </div>
         </article>
-
         <aside>
-            <section class="side-card">
-                <h2>Berita Terkait</h2>
-                <div class="related-list">
-                    <div class="related-item">
-                        <a href="kritiksaran.html">Kritik dan saran OSIS MPK dapat disampaikan secara online</a>
-                        <span>Layanan Aspirasi</span>
-                    </div>
-                    <div class="related-item">
-                        <a href="strukturorganisasi.html">Kenali struktur pengurus OSIS SMAN 1 Gedeg</a>
-                        <span>Organisasi</span>
-                    </div>
-                    <div class="related-item">
-                        <a href="strukturmpk.html">Kenali struktur pengurus MPK SMAN 1 Gedeg</a>
-                        <span>Organisasi</span>
-                    </div>
-                </div>
-                <span class="status">Terbuka untuk pembaruan</span>
-            </section>
-
-            <section class="side-card">
-                <h2>Kontak Resmi</h2>
-                <ul class="contact-list">
-                    <li>Email: <a href="mailto:osissmansage0@gmail.com">osissmansage0@gmail.com</a></li>
-                    <li>Instagram: <a href="https://www.instagram.com/osismpksmage" target="_blank">@osismpksmage</a></li>
-                    <li>TikTok: <a href="https://www.tiktok.com/@ofc.osismpksmage1" target="_blank">@ofc.osismpksmage1</a></li>
-                </ul>
-            </section>
-
-            <section class="side-card">
-                <h2>Kontak Redaksi</h2>
-                <ul class="contact-list">
-                    <li>Email: <a href="mailto:osissmansage0@gmail.com">osissmansage0@gmail.com</a></li>
-                    <li>Instagram: <a href="https://www.instagram.com/osismpksmage" target="_blank">@osismpksmage</a></li>
-                    <li>TikTok: <a href="https://www.tiktok.com/@ofc.osismpksmage1" target="_blank">@ofc.osismpksmage1</a></li>
-                </ul>
-            </section>
+            <section class="side-card"><h2>Open Recruitment</h2><div class="related-list"><div class="related-item"><a href="#daftar">Daftar Pengurus OSIS 2026</a><span>Jadilah bagian dari generasi pemimpin berikutnya.</span></div></div><span class="status">Pendaftaran dibuka</span></section>
+            <section class="side-card"><h2>Kontak Resmi</h2><ul class="contact-list"><li>Email: <a href="mailto:osissmansage0@gmail.com">osissmansage0@gmail.com</a></li><li>Instagram: <a href="https://www.instagram.com/osismpksmage" target="_blank" rel="noopener">@osismpksmage</a></li><li>TikTok: <a href="https://www.tiktok.com/@ofc.osismpksmage1" target="_blank" rel="noopener">@ofc.osismpksmage1</a></li></ul></section>
+            <section class="side-card"><h2>Informasi Lain</h2><div class="related-list"><div class="related-item"><a href="strukturorganisasi.html">Kenali struktur pengurus OSIS</a><span>Organisasi</span></div><div class="related-item"><a href="kritiksaran.html">Kritik dan saran OSIS MPK</a><span>Layanan Aspirasi</span></div></div></section>
         </aside>
     </main>
-
-    <footer>
-        <p>&copy; 2026 OSIS MPK SMAN 1 Gedeg. Semua hak dilindungi.</p>
-        <p>Alamat: JL. Pendidikan 55, Gedeg, Mojokerto, Jawa Timur</p>
-    </footer>
+    <footer><p>&copy; 2026 OSIS MPK SMAN 1 Gedeg. Semua hak dilindungi.</p><p>Alamat: JL. Pendidikan 55, Gedeg, Mojokerto, Jawa Timur</p></footer>
 </body>
 </html>
